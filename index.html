@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#29392e">
+<title>Morada — Seu mundo. Seu lugar.</title><meta name="description" content="Comprar, vender ou alugar. Na Morada, seu próximo capítulo começa com uma escolha que faz sentido para você.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2329392e'/%3E%3Cpath d='M7 25V13l9-7 9 7v12M12 25V15l4-3 4 3v10' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/architecture.jpg"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#caminhos">Pular animação</a>
+<header class="header"><a class="brand" href="#inicio" aria-label="Morada, início"><svg viewBox="0 0 38 40" aria-hidden="true"><path d="M3 36V15L19 3l16 12v21M11 36V19l8-6 8 6v17"/></svg><span>morada<small>imobiliária</small></span></a><nav aria-label="Navegação principal"><a href="#caminhos">Seu próximo passo</a><a href="#essencia">Nossa essência</a></nav><a class="header-cta" href="#planeje">Encontre seu lugar</a></header>
+<main>
+<section id="inicio" class="story" aria-label="Experiência Morada: imagine, descubra e viva">
+<div class="stage">
+<div class="architectural-grid" aria-hidden="true"></div>
+<div class="intro-title"><p>Imóveis para uma vida com mais significado.</p><h1>Seu mundo. <br>Seu lugar.</h1></div>
+<div class="portal" aria-hidden="true"><div class="photo-layer"><img id="hero-image" src="assets/architecture.jpg" alt="" fetchpriority="high" width="1536" height="1024"></div><div class="photo-shade"></div></div>
+<div class="particle-backdrop" aria-hidden="true"></div><canvas id="particles" aria-hidden="true"></canvas>
+<div class="frame-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="scene-word" aria-hidden="true">pertencer.</div>
+<div class="scene-copy"><span class="scene-kicker">Cada detalhe faz parte de você</span><h2>Um novo olhar.<br>Outras possibilidades.</h2><p>Mais do que encontrar um imóvel.<br>Descobrir onde você quer estar.</p></div>
+<div class="closing-copy"><p>Seu próximo capítulo começa com uma escolha.</p><h2>Abra espaço<br>para o novo.</h2><a class="button" href="#caminhos" tabindex="-1">Encontre seu caminho</a></div>
+<div class="story-bottom"><div class="scroll-hint"><span class="mouse" aria-hidden="true"></span><span>Explore com o scroll</span></div><div class="scene-nav" aria-label="Etapas da experiência"><button type="button" data-scene="0" aria-current="step">Imaginar</button><button type="button" data-scene="0.46">Descobrir</button><button type="button" data-scene="0.93">Pertencer</button></div><button id="motion-toggle" type="button" aria-pressed="false">Pausar movimento</button></div>
+<div class="timeline" aria-hidden="true"><span></span></div>
+</div></section>
+<div class="statement-strip"><span>Um novo jeito de encontrar seu lugar.</span><span>Morada Imobiliária</span></div>
+<section id="caminhos" class="section paths"><div class="section-heading"><p class="eyebrow">Imóveis são só o começo</p><h2>O que vem agora<br>na sua história?</h2><p>Uma mudança de rotina. Mais espaço para a família. Um investimento com propósito. Encontramos o caminho junto com você.</p></div><div class="path-grid">
+<article><span class="service-label">Comprar</span><h3>Um lugar para chamar de seu.</h3><p>Da primeira busca à escolha final, o que importa é encontrar um imóvel que combine com a sua vida.</p><a href="#planeje" data-interest="Comprar">Quero comprar</a></article>
+<article><span class="service-label">Alugar</span><h3>Liberdade para mudar.</h3><p>Um novo bairro, novos planos e a flexibilidade de morar onde o seu momento pede.</p><a href="#planeje" data-interest="Alugar">Quero alugar</a></article>
+<article><span class="service-label">Vender</span><h3>Seu imóvel, uma nova história.</h3><p>Uma apresentação cuidadosa para conectar seu imóvel às pessoas que procuram exatamente por ele.</p><a href="#planeje" data-interest="Vender">Quero vender</a></article>
+</div></section>
+<section id="essencia" class="essence"><div class="essence-image"><img src="assets/architecture.jpg" width="1536" height="1024" alt="Conceito arquitetônico de uma residência contemporânea integrada à natureza" loading="lazy"><span>O começo de algo seu.</span></div><div class="essence-copy"><p class="eyebrow">A essência Morada</p><h2>Antes dos metros quadrados,<br>as suas possibilidades.</h2><p>Um endereço faz parte de quem você é. Por isso, nossa conversa começa pelos seus planos, pela sua rotina e pelo que você não abre mão.</p><div class="principle"><h3>Escuta de verdade</h3><p>Entender seu momento antes de apresentar caminhos.</p></div><div class="principle"><h3>Clareza em cada escolha</h3><p>Informação acessível para você decidir com confiança.</p></div><div class="principle"><h3>Cuidado em cada etapa</h3><p>Uma experiência próxima, do primeiro contato à mudança.</p></div></div></section>
+<section id="planeje" class="section planning"><div><p class="eyebrow">Seu próximo capítulo</p><h2>Vamos dar forma<br>ao seu próximo passo?</h2><p>Organize suas preferências e leve um resumo daquilo que procura.</p></div><form id="brief-form"><fieldset><legend>Qual é o seu objetivo?</legend><div class="choices"><label><input type="radio" name="interest" value="Comprar" checked><span>Comprar</span></label><label><input type="radio" name="interest" value="Alugar"><span>Alugar</span></label><label><input type="radio" name="interest" value="Vender"><span>Vender</span></label></div></fieldset><label class="field" for="region">Onde você imagina esse novo começo?<input id="region" name="region" required maxlength="120" placeholder="Cidade ou bairro"></label><label class="field" for="details">O que não pode faltar?<textarea id="details" name="details" rows="3" maxlength="1000" placeholder="Mais espaço, jardim, perto do trabalho…"></textarea></label><button class="button" type="submit">Criar meu resumo</button><p class="form-note">Suas respostas ficam apenas neste navegador.</p><div id="brief-result" hidden><h3>Seu próximo passo começa assim</h3><p id="brief-text"></p><button id="download-brief" class="text-button" type="button">Baixar meu resumo</button><p role="status" id="brief-status"></p></div></form></section>
+</main><footer><a class="footer-brand" href="#inicio">morada</a><p>Espaço para uma nova história.</p><a href="#inicio">Voltar ao início</a><small>© <span id="year">2026</span> Morada Imobiliária</small></footer>
+<noscript><style>.story{height:100svh}.portal{clip-path:inset(42% 6% 10% round 12px)}.story-bottom,.scene-copy,.closing-copy,.scene-word,#brief-form{display:none}</style><p class="noscript">Ative o JavaScript para explorar a animação e criar seu resumo.</p></noscript>
+</body></html>

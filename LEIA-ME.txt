@@ -1,0 +1,46 @@
+MORADA — PERSPECTIVA
+Site em HTML, CSS e JavaScript puros. Nenhuma dependência externa.
+
+ARQUIVOS
+index.html, styles.css e script.js ficam na mesma pasta.
+A pasta assets, ao lado deles, contém architecture.jpg.
+Esta versão NÃO utiliza a sequência de 240 frames nem o vídeo enviado.
+Abra index.html para ver a página; para a animação de partículas,
+use um servidor HTTP (ex.: python -m http.server 8000).
+Servir por HTTP evita restrições do canvas para imagens em file://.
+
+ANIMAÇÃO ORIGINAL
+A rolagem nativa controla uma linha do tempo única:
+1. Uma janela arquitetônica se expande para ocupar a tela.
+2. A câmera aproxima a casa em camadas.
+3. A imagem se transforma em uma nuvem de pontos coloridos.
+4. Os pontos giram em perspectiva e se dispersam conforme o scroll.
+5. A cena se recompõe, revelando a chamada final.
+O efeito de profundidade dos pontos é uma interpretação artística
+baseada na luminosidade da imagem, não uma maquete 3D do imóvel.
+
+A seção .story controla a duração (570svh desktop, 470svh celular).
+O movimento usa requestAnimationFrame e suavização baseada no tempo.
+A quantidade de pontos e a resolução do canvas são reduzidas no celular.
+O site oferece pausa, navegação entre etapas e prefers-reduced-motion.
+Nenhum movimento automático contínuo é necessário após parar o scroll.
+
+CONTEÚDO E REFERÊNCIAS
+Morada é uma marca provisória. A residência é um conceito visual gerado,
+não uma oferta imobiliária real. O formulário cria um resumo local e
+não envia dados, leads ou mensagens para terceiros.
+A gravação enviada inspirou a passagem de imagem para partículas.
+O catálogo 21st foi consultado como referência de interface.
+Os princípios frontend-design, 21st-ui-build e 21st-ui-review foram
+aplicados ao projeto. O CLI/serviço autenticado 21st não foi utilizado.
+ui-main contém componentes React; esta implementação permanece em JS puro.
+Skills de publicação na comunidade e gerenciamento de registro não se
+aplicam à criação deste site e não foram executadas.
+
+IMAGEM ORIGINAL
+Gerada com o recurso integrado de imagens, em 1536 x 1024.
+Prompt: Photorealistic contemporary Brazilian modernist house at dusk,
+concrete cantilever, warm timber slats, glass walls, reflecting pool,
+lush tropical greenery, warm interiors, pale blue upper sky; cinematic
+architectural photography, front-on slightly low view; no people, text,
+logos, or UI.
